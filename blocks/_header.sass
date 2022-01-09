@@ -1,0 +1,79 @@
+.header
+    background-color: #fff
+    &-top
+        padding: 30px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-bottom
+        padding: 16px 0
+        border-top: 1px solid #F5B972
+        border-bottom: 1px solid #F5B972
+
+.logo
+    display: flex
+    &-img
+        cursor: pointer
+    &-title
+        font-size: 30px
+        margin-left: 17px
+        text-transform: uppercase
+        color: $dark-gray
+        cursor: pointer
+
+.search
+    &-form
+        position: relative
+        &__input
+            font-size: 18px
+            font-weight: 400
+            line-height: 24px
+            color: $dark-gray
+            outline: none
+
+            width: 450px
+            height: 45px
+            padding: 13px 0 13px 22px
+            border: none
+            border-radius: 5px
+            background-color: $light-gray
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+        &__button
+            position: absolute
+            top: 10px
+            right: 25px
+            cursor: pointer
+            border: none
+            background-color: transparent
+
+.contacts 
+    display: flex
+    &__name
+        font-size: 14px
+        font-weight: 400
+        color: $dark-gray
+        display: block
+        text-transform: uppercase
+    &__num
+        display: flex
+        flex-direction: column
+        margin-left: 15px
+    &__link
+        &:hover
+            color: $dark-gray
+            text-decoration: none
+            transition: .2s
+
+.navbar
+    display: flex
+    justify-content: space-between
+    text-transform: uppercase
+    &__link
+        font-size: 17px
+        font-weight: 500
+        color: $dark-gray
+        text-decoration: none
+        transition: .1s
+        &:hover
+            color: $orange
+            transition: .2s

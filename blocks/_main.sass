@@ -1,0 +1,73 @@
+.menu
+    grid-row: 1 / span 2
+    grid-column: 1
+
+    padding: 20px 0 195px 0
+    border-radius: 0px 0px 5px 5px
+    background-color: #fff
+    &__element
+        position: relative
+        display: flex
+        align-items: center
+        padding: 14px 0 14px 0
+        &::before
+            content: ''
+            position: absolute
+            width: 2px
+            height: 95%
+            background-color: $orange
+        &:hover
+            background: rgba(247, 148, 30, 0.3);
+            transition: .2s
+    &__img
+        padding-left: 15px
+        padding-right: 15px
+        cursor: pointer
+    &__title
+        font-weight: 500
+        color: $dark-gray
+        cursor: pointer
+        margin-right: 25px
+    &__arrow
+        cursor: pointer
+
+.main
+    &-grid
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 15px
+    &-slider
+        grid-row: 1
+        grid-column: 2 / 4
+
+        border-radius: 0px 0px 5px 5px
+    &-delivery
+        grid-row: 2
+        grid-column: 2 / 4
+
+        background-color: #fff
+        border-radius: 5px
+        &__wrapper
+            display: grid
+            grid-template-rows: 1fr 1fr
+            grid-template-columns: 1fr 1fr
+            grid-column-gap: 95px
+            grid-row-gap: 45px
+            padding: 35px 34px 85px 34px
+        &__title
+            font-size: 25px
+            line-height: 30px
+            margin-top: 15px
+            font-weight: 700
+            color: $dark-gray
+            text-transform: uppercase
+            text-align: center
+        &__element
+            display: flex
+            align-items: center
+        &__span
+            margin-left: 15px
+            font-weight: 500
+            lh17px
+            color: $dark-gray
