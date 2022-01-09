@@ -359,15 +359,6 @@ body {
   background-color: #F2F2F0;
 }
 
-.title_settings {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  color: #8B868F;
-  text-transform: uppercase;
-}
-
 .header {
   background-color: #fff;
 }
@@ -619,6 +610,12 @@ body {
 }
 
 .recommendation__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #8B868F;
+  text-transform: uppercase;
   margin-bottom: 35px;
 }
 
@@ -710,6 +707,15 @@ body {
   width: 240px;
 }
 
+.trust__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #8B868F;
+  text-transform: uppercase;
+}
+
 .company {
   padding: 50px 0;
 }
@@ -736,6 +742,12 @@ body {
 }
 
 .company__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #8B868F;
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
