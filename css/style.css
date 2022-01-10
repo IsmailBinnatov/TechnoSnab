@@ -486,6 +486,22 @@ body {
   transition: .2s;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu__item {
+  width: 25px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #F7941E;
+}
+
+.burger-menu__item:not(:last-child) {
+  margin-bottom: 3px;
+}
+
 .menu {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -626,6 +642,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .recommendation__item {
@@ -682,7 +700,6 @@ body {
 .trust {
   padding: 35px 0 45px;
   background-color: #fff;
-  margin-bottom: 2px;
 }
 
 .trust__span {
@@ -692,13 +709,15 @@ body {
   line-height: 17px;
   text-align: center;
   color: #8B868F;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .trust__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -708,10 +727,11 @@ body {
 }
 
 .trust__title {
-  text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin-bottom: 10px;
+  text-align: center;
   color: #8B868F;
   text-transform: uppercase;
 }
@@ -730,7 +750,10 @@ body {
 }
 
 .company__jpg {
-  width: 604px;
+  max-width: 604px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .company__description {
@@ -863,5 +886,101 @@ body {
 
 .footer-bottom__span {
   color: #7C7881;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 90%;
+  }
+  .search-form__input {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-grid {
+    -ms-grid-rows: 340px 1fr;
+        grid-template-rows: 340px 1fr;
+  }
+  .recommendation__item {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+  .trust__item {
+    width: 50%;
+    text-align: center;
+  }
+  .trust__item:nth-child(1), .trust__item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .company__img {
+    width: 544px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .company__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search-form {
+    display: none;
+  }
+  .header-top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logo-title {
+    font-size: 28px;
+  }
+  .footer__title {
+    font-size: 28px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .main-slider {
+    grid-column: span 3;
+  }
+  .main-delivery {
+    grid-column: span 3;
+  }
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__nav {
+    margin-top: 40px;
+  }
+  .footer__contact {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
+  .header-top {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=style.css.map */
