@@ -756,4 +756,112 @@ body {
   font-weight: 400;
   line-height: 17px;
 }
+
+.footer {
+  padding: 60px 0 25px;
+  background-color: #8B868F;
+}
+
+.footer__title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-left: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo__img {
+  cursor: pointer;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 11px;
+  color: #ECEBED;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer__link:hover {
+  color: #c4c1c7;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer__contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+.footer__contact-icon {
+  margin-right: 10px;
+}
+
+.footer__contact-adress {
+  text-decoration: none;
+  color: #ECEBED;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer__contact-adress-uppercase {
+  text-transform: uppercase;
+}
+
+.footer__contact-adress:hover {
+  color: #c4c1c7;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-bottom {
+  border-top: 1px solid #7C7881;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.footer-bottom__span {
+  color: #7C7881;
+}
 /*# sourceMappingURL=style.css.map */
