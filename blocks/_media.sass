@@ -25,13 +25,14 @@
     
 @media screen and (max-width: 992px)
     .company
-        &__img
-            width: 544px
-            margin-left: 20px
-            margin-bottom: 10px
         &__wrapper
             flex-direction: column
             align-items: center
+        &__description
+            margin-left: 0
+        &__img
+            width: 544px
+            margin-bottom: 10px
     .search
         &-form
             display: none
@@ -66,8 +67,104 @@
 
 
 @media screen and (max-width: 768px)
+    .slider
+        .prev, .next
+            padding: 15px
+        &__title
+            font-size: 20px
     .contacts
         display: none
     .header
         &-top
+            padding: 20px 0
             justify-content: space-around
+        &-bottom
+            display: none
+    .main
+        &-delivery
+            &__img
+                margin-bottom: 15px
+            &__element
+                flex-direction: column
+                width: 60%
+                margin-left: 50%
+                transform: translateX(-50%)
+                text-align: center
+            &__wrapper
+                grid-template-rows: repeat (1fr / 4)
+                grid-template-columns: 1fr
+    .recommendation
+        &__wrapper
+            flex-direction: column
+            align-items: center
+    .trust
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__item
+            &:nth-child(3), &:nth-child(4)
+                margin-bottom: 20px
+
+
+@media screen and (max-width: 576px)
+    .slider
+        height: 300px
+        .prev, .next
+            padding: 5px
+    .company
+        &__img
+            max-width: 400px
+    .recommendation
+        &__item
+            min-width: 170px
+        &__img
+            max-width: 150px
+        &__btn
+            padding: 5px 25px
+    .trust
+        &__img
+            width: 180px
+
+
+@media screen and (max-width: 410px)
+    .company
+        &__img
+            max-width: 300px
+        .recommendation
+            &__img
+                max-width: 130px
+    .trust
+        &__img
+            max-width: 150px
+    .logo
+        &-title
+            font-size: 20px
+        &-img
+            width: 40px
+    .slider
+        &__title
+            font-size: 16px
+    .main
+        &-delivery
+            &__title
+                font-size: 18px
+    .recommendation
+        &__title
+            font-size: 18px
+        &__span
+            font-size: 14px
+    .trust
+        &__title
+            font-size: 18px
+    .company
+        &__title
+            font-size: 18px
+    .footer
+        &-logo
+            &__img
+                width: 40px
+        &__title
+            font-size: 20px
+        &__contact
+            &-adress
+                font-size: 12px
