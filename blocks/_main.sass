@@ -10,6 +10,30 @@
         display: flex
         align-items: center
         padding: 14px 0 14px 0
+        &_hover
+            &:hover
+                .menu
+                    &__element
+                        &-content
+                            display: block
+        &-content
+            display: none
+            min-width: 370px
+            position: absolute
+            top: 0
+            left: 100%
+            z-index: 1
+            background-color: #fff
+            border-radius: 0px 2px 2px 0px
+        &-item
+            padding: 20px 0 21px 20px
+            cursor: pointer
+            &:hover
+                background-color: rgba(247, 148, 30, 0.3)
+        &-link
+            text-decoration: none
+            color: $dark-gray
+            line-height: 17px
         &::before
             content: ''
             position: absolute
