@@ -1085,13 +1085,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .slider .prev, .slider .next {
+  .slider-dots {
+    bottom: -975px;
+  }
+  .catalog_prev, .catalog_next {
     padding: 15px;
     right: -7.5px;
     bottom: -12.5px;
-  }
-  .slider-dots {
-    bottom: -975px;
   }
   .prev-block {
     bottom: -975px;
@@ -1175,7 +1175,7 @@ body {
   .slider {
     height: 300px;
   }
-  .slider .prev, .slider .next {
+  .catalog_prev, .catalog_next {
     padding: 5px;
     right: 2px;
     bottom: -3px;

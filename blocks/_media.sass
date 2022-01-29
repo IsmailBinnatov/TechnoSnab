@@ -104,12 +104,13 @@
 
 @media screen and (max-width: 768px)
     .slider
-        .prev, .next
+        &-dots
+            bottom: -975px
+    .catalog
+        &_prev, &_next
             padding: 15px
             right: -7.5px
             bottom: -12.5px
-        &-dots
-            bottom: -975px
     .prev
         &-block
             bottom: -975px
@@ -167,7 +168,8 @@
 @media screen and (max-width: 576px)
     .slider
         height: 300px
-        .prev, .next
+    .catalog
+        &_prev, &_next
             padding: 5px
             right: 2px
             bottom: -3px
