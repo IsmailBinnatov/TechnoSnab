@@ -47,6 +47,10 @@
     .header
         &-top
             justify-content: space-between
+        &-bottom
+            display: none
+            &_mobile
+                display: block
     .logo
         &-title
             font-size: 28px
@@ -58,6 +62,8 @@
 
     .menu
         display: none
+        &_mobile
+            display: flex
     .main
         &-slider
             grid-column: span 3
@@ -88,6 +94,8 @@
             justify-content: space-around
         &-bottom
             display: none
+            &_mobile
+                display: block
     .main
         &-delivery
             &__img
@@ -114,7 +122,6 @@
         &__item
             &:nth-child(3), &:nth-child(4)
                 margin-bottom: 20px
-
 
 @media screen and (max-width: 576px)
     .slider

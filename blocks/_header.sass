@@ -46,7 +46,7 @@
             border: none
             background-color: transparent
 
-.contacts 
+.contacts
     display: flex
     &__name
         font-size: 14px
@@ -78,13 +78,16 @@
             color: $orange
             transition: .2s
 
-.burger-menu
-    display: none
-    cursor: pointer
-    &__item
-        width: 25px
-        height: 4px
-        border-radius: 3px
-        background-color: $orange
-        &:not(:last-child)
-            margin-bottom: 3px
+.burger
+    &-wrapper
+        padding: 8px
+    &-menu
+        display: none
+        cursor: pointer
+        &__item
+            width: 25px
+            height: 4px
+            border-radius: 3px
+            background-color: $orange
+            &:not(:last-child)
+                margin-bottom: 3px
