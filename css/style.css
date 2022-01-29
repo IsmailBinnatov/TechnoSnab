@@ -985,6 +985,33 @@ body {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .products-wrapper_second {
+    min-height: 1250px;
+  }
+  .products-ul_hide {
+    display: none;
+  }
+  .slider-dots {
+    bottom: -875px;
+  }
+  .prev-block {
+    bottom: -875px;
+  }
+  .next-block {
+    bottom: -875px;
+  }
+  .contacts-catalog {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .header-bottom_catalog {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .company__wrapper {
     -webkit-box-orient: vertical;
@@ -1060,8 +1087,19 @@ body {
 @media screen and (max-width: 768px) {
   .slider .prev, .slider .next {
     padding: 15px;
+    right: -7.5px;
+    bottom: -12.5px;
   }
-  .slider__title {
+  .slider-dots {
+    bottom: -975px;
+  }
+  .prev-block {
+    bottom: -975px;
+  }
+  .next-block {
+    bottom: -975px;
+  }
+  .next__title {
     font-size: 20px;
   }
   .contacts {
@@ -1098,8 +1136,14 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .recommendation__item {
-    width: 100%;
+  .recommendation__btn {
+    padding: 5px 22px;
+  }
+  .recommendation__img {
+    max-width: 130px;
+  }
+  .recommendation__item_hide {
+    display: none;
   }
   .recommendation__wrapper {
     -webkit-box-orient: vertical;
@@ -1122,6 +1166,9 @@ body {
   .trust__item:nth-child(3), .trust__item:nth-child(4) {
     margin-bottom: 20px;
   }
+  .products-wrapper_second {
+    height: 1400px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1130,18 +1177,14 @@ body {
   }
   .slider .prev, .slider .next {
     padding: 5px;
+    right: 2px;
+    bottom: -3px;
   }
   .company__img {
     max-width: 400px;
   }
   .recommendation__item {
     min-width: 170px;
-  }
-  .recommendation__img {
-    max-width: 150px;
-  }
-  .recommendation__btn {
-    padding: 5px 25px;
   }
   .trust__img {
     width: 180px;
@@ -1164,11 +1207,28 @@ body {
   .logo-img {
     width: 40px;
   }
+  .slider-dots {
+    right: 65px;
+  }
+  .slider .prev-block {
+    left: 0;
+  }
+  .slider .next-block {
+    right: 10px;
+  }
   .slider__title {
     font-size: 16px;
   }
   .main-delivery__title {
     font-size: 18px;
+  }
+  .recommendation__item {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .recommendation__item_s {
+    display: none;
   }
   .recommendation__title {
     font-size: 18px;
@@ -1254,7 +1314,7 @@ body {
 }
 
 .products-ul {
-  height: 960px;
+  min-height: 960px;
   min-width: 360px;
   padding: 20px 0 220px;
   margin-bottom: 480px;

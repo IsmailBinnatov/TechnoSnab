@@ -1,8 +1,13 @@
-const links = document.querySelectorAll('.products__link')
-const accordion = document.querySelector('.products-accordion')
+function accordionOpen() {
+    const links = document.querySelectorAll('.products__link')
+    const accordion = document.querySelectorAll('.products-accordion')
 
-links.forEach((link) => {
-    link.addEventListener('click', function openAcc() {
-        accordion.classList.toggle('products-accordion_active')
-    })
-})
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function openAcc(event) {
+            event.preventDefault()
+            accordion[i].classList.toggle('products-accordion_active')
+        })
+    }
+}
+
+accordionOpen()

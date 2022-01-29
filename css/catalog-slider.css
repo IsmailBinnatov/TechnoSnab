@@ -52,7 +52,7 @@
     position: absolute;
 
     right: 150px;
-    bottom: 60px;
+    bottom: -1025px;
 
     width: 23px;
     height: 23px;
@@ -71,7 +71,7 @@
     position: absolute;
 
     right: 0;
-    bottom: 60px;
+    bottom: -1025px;
 
     width: 23px;
     height: 23px;
@@ -98,7 +98,7 @@
 .slider-dots {
     position: absolute;
     right: -4px;
-    bottom: 60px;
+    bottom: -1025px;
     transform: translateX(-50%);
     z-index: 99;
     text-align: center;

@@ -9,7 +9,6 @@
         &__img
             max-width: 150px
 
-            
 @media screen and (max-width: 1200px)
     .main
         &-grid
@@ -27,10 +26,34 @@
             &:nth-child(1), &:nth-child(2)
                 margin-bottom: 20px
 
-    // Catalog
-        
+@media screen and (max-width: 1100px)
+    .products
+        &-wrapper
+            &_second
+                min-height: 1250px
+        &-ul
+            &_hide
+                display: none
+    .slider
+        &-dots
+            bottom: -875px
+    .prev
+        &-block
+            bottom: -875px
+    .next
+        &-block
+            bottom: -875px
+    .contacts
+        &-catalog
+            display: none
+    .burger
+        &-menu
+            display: block
+    .header
+        &-bottom
+            &_catalog
+                display: none
 
-    
 @media screen and (max-width: 992px)
     .company
         &__wrapper
@@ -79,11 +102,20 @@
             margin-top: 40px
             margin-left: 30px
 
-
 @media screen and (max-width: 768px)
     .slider
         .prev, .next
             padding: 15px
+            right: -7.5px
+            bottom: -12.5px
+        &-dots
+            bottom: -975px
+    .prev
+        &-block
+            bottom: -975px
+    .next
+        &-block
+            bottom: -975px
         &__title
             font-size: 20px
     .contacts
@@ -110,8 +142,13 @@
                 grid-template-rows: repeat (1fr / 4)
                 grid-template-columns: 1fr
     .recommendation
+        &__btn
+            padding: 5px 22px
+        &__img
+            max-width: 130px
         &__item
-            width: 100%
+            &_hide
+                display: none
         &__wrapper
             flex-direction: column
             align-items: center
@@ -122,26 +159,27 @@
         &__item
             &:nth-child(3), &:nth-child(4)
                 margin-bottom: 20px
+    .products
+        &-wrapper
+            &_second
+                height: 1400px
 
 @media screen and (max-width: 576px)
     .slider
         height: 300px
         .prev, .next
             padding: 5px
+            right: 2px
+            bottom: -3px
     .company
         &__img
             max-width: 400px
     .recommendation
         &__item
             min-width: 170px
-        &__img
-            max-width: 150px
-        &__btn
-            padding: 5px 25px
     .trust
         &__img
             width: 180px
-
 
 @media screen and (max-width: 410px)
     .company
@@ -159,6 +197,14 @@
         &-img
             width: 40px
     .slider
+        &-dots
+            right: 65px
+        .prev
+            &-block
+                left: 0
+        .next
+            &-block
+                right: 10px
         &__title
             font-size: 16px
     .main
@@ -166,6 +212,11 @@
             &__title
                 font-size: 18px
     .recommendation
+        &__item
+            margin-left: 50%
+            transform: translateX(-50%)
+            &_s
+                display: none
         &__title
             font-size: 18px
         &__span
