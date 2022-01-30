@@ -1368,4 +1368,117 @@ body {
   width: 30%;
   margin-bottom: 20px;
 }
+
+.location {
+  margin-bottom: 40px;
+}
+
+.location-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2 / 1fr;
+      grid-template-rows: 2 / 1fr;
+  -ms-grid-columns: 3 / 1fr;
+      grid-template-columns: 3 / 1fr;
+  grid-gap: 20px;
+}
+
+.details {
+  grid-row: span 2;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px 120px 30px;
+}
+
+.details__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #8B868F;
+  display: block;
+}
+
+.details__subtitle {
+  margin: 12px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8B868F;
+  display: block;
+}
+
+.details__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8B868F;
+}
+
+.feedback {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 5px;
+}
+
+.feedback__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #8B868F;
+  margin-bottom: 20px;
+}
+
+.feedback__name {
+  padding: 10px 0 10px 20px;
+  margin-bottom: 20px;
+  background: #ECEBED;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  color: #8B868F;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: .8px;
+}
+
+.feedback__message {
+  padding: 10px 0 0 20px;
+  margin-bottom: 20px;
+  background: #ECEBED;
+  border-radius: 5px;
+  border: none;
+  min-height: 150px;
+  width: 100%;
+  color: #8B868F;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: .8px;
+}
+
+.feedback__btn {
+  padding: 13px 37px;
+  width: 240px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: .8px;
+  background-color: #F7941E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.feedback__btn:hover {
+  background-color: #c47d25;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
 /*# sourceMappingURL=style.css.map */
