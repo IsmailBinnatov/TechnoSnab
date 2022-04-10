@@ -1,5 +1,4 @@
 Сайт Техноснаб - моя практика
+Site Texnosnab - my project (practice)
      
-     Texnosnab - my project (practice)
-     
-https://ismll.github.io/TechnoSnab/
+     https://ismll.github.io/TechnoSnab/
