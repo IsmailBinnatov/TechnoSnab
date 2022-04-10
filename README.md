@@ -1,3 +1,3 @@
-Site Texnosnab - my project (practice)
+Site TechnoSnab - my project (practice)
      
 https://ismll.github.io/TechnoSnab/
