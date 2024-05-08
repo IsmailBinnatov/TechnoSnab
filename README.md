@@ -1,3 +1,3 @@
 Site TechnoSnab - my project (practice)
      
-https://ismll.github.io/TechnoSnab/
+https://IsmailBinnatov.github.io/TechnoSnab/
